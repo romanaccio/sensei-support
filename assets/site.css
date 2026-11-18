@@ -1,0 +1,107 @@
+/* Sensei support site: the app's palette (green accent, sakura pink logo), cards as in the app, light and dark. */
+:root {
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --text: #1c1c1e;
+  --text-secondary: #5f5e5a;
+  --border: rgba(0, 0, 0, 0.08);
+  --accent: #2e7a56;
+  --accent-soft: #e1f5ee;
+  --on-accent: #ffffff;
+  --logo: #f84c77;
+  --radius-card: 20px;
+  --radius-sm: 12px;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214;
+    --surface: #1e1e21;
+    --text: #f2f2f2;
+    --text-secondary: #a9a8a3;
+    --border: rgba(255, 255, 255, 0.1);
+    --accent: #5dcaa5;
+    --accent-soft: rgba(93, 202, 165, 0.14);
+    --on-accent: #04342c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+a { color: var(--accent); }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+/* Header: logo, navigation, language switch. */
+header { padding: 16px 0; }
+header .wrap { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text); font-weight: 700; }
+.brand span.logo {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--logo); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 17px;
+}
+nav { display: flex; gap: 16px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: var(--text-secondary); font-size: 15px; }
+nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+.lang { margin-left: auto; display: inline-flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+.lang button {
+  border: 0; background: transparent; color: var(--text-secondary);
+  font: inherit; font-size: 14px; padding: 4px 12px; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+
+/* Hero. */
+.hero { display: flex; gap: 24px; align-items: center; padding: 24px 0 8px; }
+.hero img { width: 112px; height: 112px; border-radius: 24px; flex: none; }
+.hero h1 { margin: 0 0 4px; font-size: 34px; line-height: 1.2; }
+.hero p { margin: 0; color: var(--text-secondary); }
+@media (max-width: 520px) {
+  .hero { flex-direction: column; align-items: flex-start; }
+  .hero img { width: 88px; height: 88px; border-radius: 20px; }
+}
+
+.stores { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0 8px; }
+.store {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--text); color: var(--bg);
+  text-decoration: none; font-weight: 600; font-size: 15px;
+  padding: 8px 16px; border-radius: var(--radius-sm);
+}
+
+/* Cards, as the app's feature cards. */
+main { padding-bottom: 48px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 20px 24px;
+  margin: 16px 0;
+}
+.card h2 { margin: 0 0 8px; font-size: 22px; }
+.card p { margin: 8px 0; }
+.card .updated { color: var(--text-secondary); font-size: 14px; }
+.features { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; }
+.features li { background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 4px 12px; font-size: 15px; }
+
+/* Nouveautés: one card per version. */
+.version {
+  display: inline-block; background: var(--accent-soft); color: var(--accent);
+  font-weight: 600; font-size: 14px; border-radius: 999px; padding: 2px 12px;
+}
+.news h2 { margin-top: 8px; }
+.news p { color: var(--text-secondary); }
+
+footer { color: var(--text-secondary); font-size: 14px; padding: 24px 0 40px; text-align: center; }
+
+/* One language at a time: the html element's lang attribute picks it. */
+html[lang="fr"] [data-lang="en"],
+html[lang="en"] [data-lang="fr"] { display: none; }

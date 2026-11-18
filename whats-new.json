@@ -1,0 +1,81 @@
+[
+  {
+    "version": "1.5",
+    "title": {
+      "fr": "Ta séance du jour",
+      "en": "Today's session"
+    },
+    "text": {
+      "fr": "Sur l'accueil, une seule carte te dit ce qu'il y a à réviser aujourd'hui et combien de temps ça prend. Tes decks, tes listes et tes statistiques sont dans la nouvelle tuile Révisions. Un petit rappel chaque jour aide à garder le rythme.",
+      "en": "On the home screen, a single card tells you what to review today and how long it takes. Your decks, lists and statistics are in the new Reviews tile. A little daily reminder helps you keep the pace."
+    },
+    "action": "reminder"
+  },
+  {
+    "version": "1.6",
+    "title": {
+      "fr": "Séances équilibrées et exemples",
+      "en": "Balanced sessions and examples"
+    },
+    "text": {
+      "fr": "Chaque séance mélange maintenant révisions, nouveaux mots et quelques cartes difficiles, en 5 minutes environ ; tu choisis d'où viennent tes nouveaux mots (Révisions, roue dentée). Nouveau : des phrases d'exemple pour plus de 1 000 mots, « Mon contexte » pour noter où tu as rencontré un mot, « Écoute d'abord » en révision et le quiz Dictée. En grammaire : les fiches sont rangées par catégorie, avec la forme en て des adjectifs, la forme potentielle et とか.",
+      "en": "Each session now mixes reviews, new words and a few hard cards, in about 5 minutes; you choose where new words come from (Reviews, gear icon). New: example sentences for over 1,000 words, “My context” to note where you met a word, “Listen first” in reviews and the Dictation quiz. In grammar: points are grouped by category, with the adjective て-form, the potential form and とか."
+    }
+  },
+  {
+    "version": "1.7",
+    "title": {
+      "fr": "Réviser autrement",
+      "en": "New ways to review"
+    },
+    "text": {
+      "fr": "Dans Caractères, Vocabulaire, Compteurs, Favoris et tes listes, le menu Quiz propose maintenant « Réviser » : une séance sur ce qui est affiché, par exemple les kanji N5 une fois le filtre posé, ou sur les éléments que tu as sélectionnés. Et quand ta séance du jour est finie, « Réviser en avance » te propose les cartes des 3 prochains jours. Pour écrire en révisant, deux options dans les réglages des révisions (Révisions, roue dentée) : « Répondre au clavier » pour taper les mots en kana ou en romaji, et « Tracer les kanji » pour les dessiner de mémoire. Le widget devient « Séance du jour » : il affiche ta séance de l'accueil et l'ouvre d'un tap.",
+      "en": "In Characters, Vocabulary, Counters, Favorites and your lists, the Quiz menu now offers “Review”: a session on what is shown, for example the N5 kanji once the filter is set, or on the items you selected. And once your daily session is done, “Review ahead” offers the cards of the next 3 days. To write while you review, two options in the review settings (Reviews, gear icon): “Type your answers” to type words in kana or romaji, and “Draw kanji” to draw them from memory. The widget becomes “Today's session”: it shows your home session and opens it with a tap."
+    }
+  },
+  {
+    "version": "1.8",
+    "title": {
+      "fr": "Ton objectif JLPT",
+      "en": "Your JLPT goal"
+    },
+    "text": {
+      "fr": "Choisis ton objectif dans les réglages (« Mon objectif ») : N5, N4, N3 ou Tout. Sensei te propose alors les kanji, les mots, les compteurs et la grammaire de ce niveau et des niveaux en dessous, dans ta séance du jour comme dans les listes. Un sélecteur « Niveau » permet de voir les autres niveaux, et une petite pastille signale un élément au-dessus de ton objectif ; ses mots s'affichent d'abord en kana. Tes listes, tes favoris et tes programmes restent complets, et les cartes déjà commencées sont gardées (réglages des révisions). En grammaire : 10 nouveaux points N5, dont 〜ませんか, だけ, しか et la proposition relative, et 145 nouvelles questions dans les quiz.",
+      "en": "Choose your goal in the settings (“My goal”): N5, N4, N3 or All. Sensei then offers the kanji, words, counters and grammar of that level and the levels below it, in your daily session as in the lists. A “Level” picker shows the other levels, and a small badge marks an item above your goal; its words show in kana first. Your lists, favorites and programs stay complete, and the cards you already started are kept (review settings). In grammar: 10 new N5 points, including 〜ませんか, だけ, しか and relative clauses, and 145 new quiz questions."
+    }
+  },
+  {
+    "version": "1.9",
+    "title": {
+      "fr": "La grammaire dans tes révisions",
+      "en": "Grammar in your reviews"
+    },
+    "text": {
+      "fr": "Chaque point de grammaire de ton objectif devient une carte de révision. Elle revient au bon moment avec une question des quiz : particule manquante, forme verbale ou ordre des mots, jamais la même deux fois de suite. Une bonne réponse, et tu choisis Bien ou Facile ; une erreur, et la carte revient un peu plus tard, avec le rappel du point et son piège. Deux nouveaux points par jour, en plus de tes nouveaux mots. Le réglage « Grammaire dans les révisions » permet de l'activer ou de l'arrêter à tout moment.",
+      "en": "Each grammar point of your goal becomes a review card. It comes back at the right time with a quiz question: missing particle, verb form or word order, never the same one twice in a row. Get it right and pick Good or Easy; get it wrong and the card comes back a little later, with a reminder of the point and its trap. Two new points a day, on top of your new words. The setting \"Grammar in reviews\" turns it on or off at any time."
+    },
+    "action": "grammarCards"
+  },
+  {
+    "version": "1.10",
+    "title": {
+      "fr": "Entraîne ton oreille",
+      "en": "Train your ear"
+    },
+    "text": {
+      "fr": "Nouvelle tuile « Écoute » sur l'accueil. Avec « Comprendre une phrase », une phrase d'exemple est lue sans être écrite : choisis sa traduction parmi quatre, des phrases proches qui demandent de bien écouter. Réécoute-la, ou plus lentement, autant que tu veux. Après ta réponse, la phrase s'affiche avec sa lecture et le mot dont elle est l'exemple. La Dictée et « Écouter » s'y retrouvent aussi, sur les mots de ton objectif. L'écoute compte pour un tiers de la note du JLPT.",
+      "en": "New \"Listening\" tile on the home screen. With \"Understand a sentence\", an example sentence is read without being written: pick its translation among four, close sentences that need careful listening. Play it again, or slower, as often as you like. After your answer, the sentence shows with its reading and the word it is an example of. Dictation and \"Listen\" are there too, on the words of your goal. Listening is a third of the JLPT score."
+    }
+  },
+  {
+    "version": "1.11",
+    "title": {
+      "fr": "Sensei en cinq onglets",
+      "en": "Sensei in five tabs"
+    },
+    "text": {
+      "fr": "Sensei se range maintenant en cinq onglets, en bas de l'écran. Aujourd'hui garde ta séance du jour et la recherche. Apprendre réunit les caractères, le vocabulaire et la grammaire ; S'entraîner, les révisions, l'écoute et la lecture ; Listes, tes listes, tes favoris et les programmes. Profil montre ta progression et tes réglages, dont « Séance et révisions » : nouveaux mots par jour, grammaire, écoute, clavier. L'icône de la carte « Ta séance du jour » ouvre aussi ces réglages. Chaque onglet garde ta place quand tu passes à un autre. Et chaque jour, un mot de ton objectif t'attend sur Aujourd'hui, avec sa lecture et sa prononciation. Dans Écoute, les dialogues arrivent : une courte conversation lue avec deux voix, comme à l'épreuve d'écoute du JLPT, et une question sur ce que tu as entendu. Et la lecture arrive aussi : de courts textes en japonais, comme à l'épreuve de lecture du JLPT, avec les furigana sur les kanji hors de ton objectif, le bouton « ふりがな » pour les voir tous, et un mot souligné à toucher pour ouvrir sa fiche.",
+      "en": "Sensei now fits in five tabs at the bottom of the screen. Today keeps your daily session and the search. Learn gathers characters, vocabulary and grammar; Practice, reviews, listening and reading; Lists, your lists, favorites and programs. Profile shows your progress and your settings, including \"Session & reviews\": new words per day, grammar, listening, typing. The icon on the \"Today's session\" card opens these settings too. Each tab keeps your place when you switch to another. And every day, a word of your goal waits for you on Today, with its reading and its pronunciation. In Listening, dialogues arrive: a short conversation read with two voices, as in the JLPT listening test, and a question about what you heard. Reading arrives too: short texts in Japanese, as in the JLPT reading test, with furigana over the kanji outside your goal, the « ふりがな » button to show them all, and an underlined word to tap to open its sheet."
+    }
+  }
+]
