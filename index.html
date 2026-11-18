@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sensei App</title>
+  <meta name="description" content="Sensei: Japanese for the JLPT N5 on iPhone and Android, with spaced repetition. Support, privacy policy and release notes.">
   <link rel="canonical" href="https://sensei-support.netlify.app/">
   <script>
     // The page moved to Netlify; the GitHub Pages copy only redirects (the same file may be served by both hosts).
@@ -10,38 +13,78 @@
     }
   </script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23f84c77%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2260%22 fill=%22white%22 font-weight=%22bold%22>学</text></svg>">
-
-  <style>
-    body {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      font-family: sans-serif;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js"></script>
 </head>
 <body>
-  <img src="assets/sensei_v3.png" alt="Sensei logo" width="150">
-  <h1>Sensei App</h1>
-  <p>Master the basics of Japanese with JLPT N5 content and a spaced repetition system to build lasting knowledge.</p>
-  <p>Maîtrisez les bases du japonais avec un contenu couvrant le JLPT N5 et un système de révision espacée pour ancrer vos connaissances durablement.</p>
-  
-  <h1>Support</h1>
-  <p>Contact : <a href="mailto:hajimetech@outlook.com">hajimetech@outlook.com</a></p>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="logo" aria-hidden="true">学</span>Sensei</a>
+    <nav>
+      <a href="index.html" aria-current="page"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a>
+      <a href="news.html"><span data-lang="fr">Nouveautés</span><span data-lang="en">What's new</span></a>
+      <a href="index.html#privacy"><span data-lang="fr">Confidentialité</span><span data-lang="en">Privacy</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button type="button" data-set="fr" aria-pressed="false">FR</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <img src="assets/sensei_v3.png" alt="Sensei logo">
+    <div>
+      <h1>Sensei</h1>
+      <p data-lang="fr">Maîtrisez les bases du japonais avec un contenu couvrant le JLPT N5 et un système de révision espacée pour ancrer vos connaissances durablement.</p>
+      <p data-lang="en">Master the basics of Japanese with JLPT N5 content and a spaced repetition system to build lasting knowledge.</p>
+    </div>
+  </section>
 
-  <h1>Privacy Policy</h1>
-  <p>Sensei, on iPhone and on Android, collects no personal data. Nothing is sold or shared, and there is no account, no advertising and no tracking.</p>
-  <p>Your progress, favorites, lists and settings are stored on your device. On iPhone, they are synced through your own iCloud account. On Android, they are included in your device's Google backup. The developer has no access to them.</p>
-  <p>The Android app has no internet access. Links to the feedback form, to the support e-mail address and to external sites open outside the app, only when you choose to use them. A support e-mail includes the app version and your device model so we can help you.</p>
-  <p>Donations are optional and entirely processed by the App Store or Google Play. We receive no payment information, and the app keeps no record of them.</p>
-  <p><em>Last updated: October 2026.</em></p>
+  <div class="stores">
+    <a class="store" href="https://apps.apple.com/app/id6764353450">App Store</a>
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.tonio.senseiapp">Google Play</a>
+  </div>
 
-  <h1>Politique de confidentialité</h1>
-  <p>Sensei, sur iPhone comme sur Android, ne collecte aucune donnée personnelle. Rien n'est vendu ni partagé, et il n'y a ni compte, ni publicité, ni suivi.</p>
-  <p>Votre progression, vos favoris, vos listes et vos réglages sont enregistrés sur votre appareil. Sur iPhone, ils sont synchronisés par votre propre compte iCloud. Sur Android, ils font partie de la sauvegarde Google de votre appareil. Le développeur n'y a pas accès.</p>
-  <p>L'app Android n'accède pas à Internet. Les liens vers le formulaire d'avis, l'adresse e-mail du support et les sites externes s'ouvrent hors de l'app, seulement si vous choisissez de les utiliser. Un e-mail au support contient la version de l'app et le modèle de votre appareil, pour pouvoir vous aider.</p>
-  <p>Les dons sont facultatifs et entièrement traités par l'App Store ou Google Play. Nous ne recevons aucune information de paiement, et l'app n'en garde aucune trace.</p>
-  <p><em>Dernière mise à jour : octobre 2026.</em></p>
+  <section class="card">
+    <h2><span data-lang="fr">Dans l'app</span><span data-lang="en">In the app</span></h2>
+    <ul class="features" data-lang="fr">
+      <li>Hiragana, katakana, kanji</li><li>Vocabulaire</li><li>Verbes et adjectifs</li><li>Grammaire</li>
+      <li>Écoute</li><li>Lecture</li><li>Révisions espacées</li><li>Tes listes</li>
+    </ul>
+    <ul class="features" data-lang="en">
+      <li>Hiragana, katakana, kanji</li><li>Vocabulary</li><li>Verbs and adjectives</li><li>Grammar</li>
+      <li>Listening</li><li>Reading</li><li>Spaced repetition</li><li>Your lists</li>
+    </ul>
+    <p><a href="news.html"><span data-lang="fr">Voir les nouveautés de chaque version →</span><span data-lang="en">See what's new in each version →</span></a></p>
+  </section>
 
+  <section class="card" id="support">
+    <h2>Support</h2>
+    <p>Contact : <a href="mailto:hajimetech@outlook.com">hajimetech@outlook.com</a></p>
+  </section>
+
+  <section class="card" id="privacy">
+    <div data-lang="en">
+      <h2>Privacy Policy</h2>
+      <p>Sensei, on iPhone and on Android, collects no personal data. Nothing is sold or shared, and there is no account, no advertising and no tracking.</p>
+      <p>Your progress, favorites, lists and settings are stored on your device. On iPhone, they are synced through your own iCloud account. On Android, they are included in your device's Google backup. The developer has no access to them.</p>
+      <p>The Android app has no internet access. Links to the feedback form, to the support e-mail address and to external sites open outside the app, only when you choose to use them. A support e-mail includes the app version and your device model so we can help you.</p>
+      <p>Donations are optional and entirely processed by the App Store or Google Play. We receive no payment information, and the app keeps no record of them.</p>
+      <p class="updated"><em>Last updated: October 2026.</em></p>
+    </div>
+    <div data-lang="fr">
+      <h2>Politique de confidentialité</h2>
+      <p>Sensei, sur iPhone comme sur Android, ne collecte aucune donnée personnelle. Rien n'est vendu ni partagé, et il n'y a ni compte, ni publicité, ni suivi.</p>
+      <p>Votre progression, vos favoris, vos listes et vos réglages sont enregistrés sur votre appareil. Sur iPhone, ils sont synchronisés par votre propre compte iCloud. Sur Android, ils font partie de la sauvegarde Google de votre appareil. Le développeur n'y a pas accès.</p>
+      <p>L'app Android n'accède pas à Internet. Les liens vers le formulaire d'avis, l'adresse e-mail du support et les sites externes s'ouvrent hors de l'app, seulement si vous choisissez de les utiliser. Un e-mail au support contient la version de l'app et le modèle de votre appareil, pour pouvoir vous aider.</p>
+      <p>Les dons sont facultatifs et entièrement traités par l'App Store ou Google Play. Nous ne recevons aucune information de paiement, et l'app n'en garde aucune trace.</p>
+      <p class="updated"><em>Dernière mise à jour : octobre 2026.</em></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">Sensei · <a href="mailto:hajimetech@outlook.com">hajimetech@outlook.com</a></div>
+</footer>
 </body>
 </html>

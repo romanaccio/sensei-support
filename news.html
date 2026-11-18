@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sensei · What's new</title>
+  <meta name="description" content="Sensei: Japanese for the JLPT N5 on iPhone and Android, with spaced repetition. Support, privacy policy and release notes.">
+  <link rel="canonical" href="https://sensei-support.netlify.app/news.html">
+  <script>
+    // The page moved to Netlify; the GitHub Pages copy only redirects (the same file may be served by both hosts).
+    if (location.hostname.endsWith("github.io")) {
+      location.replace("https://sensei-support.netlify.app/news.html" + location.hash);
+    }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23f84c77%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2260%22 fill=%22white%22 font-weight=%22bold%22>学</text></svg>">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js"></script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="logo" aria-hidden="true">学</span>Sensei</a>
+    <nav>
+      <a href="index.html"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a>
+      <a href="news.html" aria-current="page"><span data-lang="fr">Nouveautés</span><span data-lang="en">What's new</span></a>
+      <a href="index.html#privacy"><span data-lang="fr">Confidentialité</span><span data-lang="en">Privacy</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button type="button" data-set="fr" aria-pressed="false">FR</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1><span data-lang="fr">Nouveautés</span><span data-lang="en">What's new</span></h1>
+      <p data-lang="fr">Ce que chaque version de Sensei a apporté, de la plus récente à la plus ancienne.</p>
+      <p data-lang="en">What each version of Sensei brought, newest first.</p>
+    </div>
+  </section>
+  <div id="news" aria-live="polite"></div>
+  <noscript><p class="card">JavaScript is needed to show the release notes. / JavaScript est nécessaire pour afficher les nouveautés.</p></noscript>
+</main>
+<footer>
+  <div class="wrap">Sensei · <a href="mailto:hajimetech@outlook.com">hajimetech@outlook.com</a></div>
+</footer>
+<script>
+  // whats-new.json is the app's Sensei/whats_new.json as released (copied at each release tag).
+  (function () {
+    var list = document.getElementById("news");
+    var entries = null;
+    function parts(v) { return v.split(".").map(Number); }
+    function newerFirst(a, b) {
+      var x = parts(a.version), y = parts(b.version);
+      for (var i = 0; i < Math.max(x.length, y.length); i++) {
+        var d = (y[i] || 0) - (x[i] || 0);
+        if (d) return d;
+      }
+      return 0;
+    }
+    function text(map, lang) { return (map && (map[lang] || map.en)) || ""; }
+    function render() {
+      if (!entries) return;
+      var lang = window.senseiLang();
+      list.textContent = "";
+      entries.forEach(function (e) {
+        var card = document.createElement("article");
+        card.className = "card news";
+        var pill = document.createElement("span");
+        pill.className = "version";
+        pill.textContent = e.version;
+        var h = document.createElement("h2");
+        h.textContent = text(e.title, lang);
+        var p = document.createElement("p");
+        p.textContent = text(e.text, lang);
+        card.append(pill, h, p);
+        list.append(card);
+      });
+    }
+    fetch("whats-new.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) { entries = data.slice().sort(newerFirst); render(); })
+      .catch(function () {
+        list.innerHTML = '<p class="card"><span data-lang="fr">Les nouveautés n\'ont pas pu être chargées.</span>' +
+          '<span data-lang="en">The release notes could not be loaded.</span></p>';
+      });
+    document.addEventListener("sensei-lang", render);
+  })();
+</script>
+</body>
+</html>
