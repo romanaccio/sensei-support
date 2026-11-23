@@ -1,6 +1,9 @@
-// Sensei support site: the FR / EN switch (hash #fr / #en, then the last choice, then the browser's language).
+// Sensei support site: the FR / EN / ES switch (hash #fr / #en / #es, then the last choice, then the browser's language).
 (function () {
   var KEY = "sensei-lang";
+  var LANGS = ["fr", "en", "es"];
+
+  function known(lang) { return LANGS.indexOf(lang) >= 0; }
 
   function stored() {
     try { return localStorage.getItem(KEY); } catch (e) { return null; }
@@ -8,10 +11,11 @@
 
   function initial() {
     var hash = location.hash.replace("#", "");
-    if (hash === "fr" || hash === "en") return hash;
+    if (known(hash)) return hash;
     var saved = stored();
-    if (saved === "fr" || saved === "en") return saved;
-    return (navigator.language || "en").toLowerCase().indexOf("fr") === 0 ? "fr" : "en";
+    if (known(saved)) return saved;
+    var browser = (navigator.language || "en").toLowerCase().slice(0, 2);
+    return known(browser) ? browser : "en";
   }
 
   function apply(lang) {

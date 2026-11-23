@@ -5,7 +5,7 @@ A simple page to provide support for the Sensei app (iOS and Android), including
 
 - `index.html`: the app, the store links, support and the privacy policy (the URL given to the App Store and Google Play: keep it at the root).
 - `news.html`: the release notes, read from `whats-new.json`.
-- `assets/site.css`, `assets/site.js`: the look and the FR / EN switch.
+- `assets/site.css`, `assets/site.js`: the look and the FR / EN / ES switch.
 
 ## Release notes
 
