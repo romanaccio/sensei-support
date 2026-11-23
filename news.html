@@ -21,26 +21,28 @@
   <div class="wrap">
     <a class="brand" href="index.html"><span class="logo" aria-hidden="true">学</span>Sensei</a>
     <nav>
-      <a href="index.html"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a>
-      <a href="news.html" aria-current="page"><span data-lang="fr">Nouveautés</span><span data-lang="en">What's new</span></a>
-      <a href="index.html#privacy"><span data-lang="fr">Confidentialité</span><span data-lang="en">Privacy</span></a>
+      <a href="index.html"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span><span data-lang="es">Inicio</span></a>
+      <a href="news.html" aria-current="page"><span data-lang="fr">Nouveautés</span><span data-lang="en">What's new</span><span data-lang="es">Novedades</span></a>
+      <a href="index.html#privacy"><span data-lang="fr">Confidentialité</span><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a>
     </nav>
-    <div class="lang" role="group" aria-label="Langue / Language">
+    <div class="lang" role="group" aria-label="Langue / Language / Idioma">
       <button type="button" data-set="fr" aria-pressed="false">FR</button>
       <button type="button" data-set="en" aria-pressed="false">EN</button>
+      <button type="button" data-set="es" aria-pressed="false">ES</button>
     </div>
   </div>
 </header>
 <main class="wrap">
   <section class="hero">
     <div>
-      <h1><span data-lang="fr">Nouveautés</span><span data-lang="en">What's new</span></h1>
+      <h1><span data-lang="fr">Nouveautés</span><span data-lang="en">What's new</span><span data-lang="es">Novedades</span></h1>
       <p data-lang="fr">Ce que chaque version de Sensei a apporté, de la plus récente à la plus ancienne.</p>
       <p data-lang="en">What each version of Sensei brought, newest first.</p>
+      <p data-lang="es">Lo que trajo cada versión de Sensei, de la más reciente a la más antigua.</p>
     </div>
   </section>
   <div id="news" aria-live="polite"></div>
-  <noscript><p class="card">JavaScript is needed to show the release notes. / JavaScript est nécessaire pour afficher les nouveautés.</p></noscript>
+  <noscript><p class="card">JavaScript is needed to show the release notes. / JavaScript est nécessaire pour afficher les nouveautés. / Se necesita JavaScript para mostrar las novedades.</p></noscript>
 </main>
 <footer>
   <div class="wrap">Sensei · <a href="mailto:hajimetech@outlook.com">hajimetech@outlook.com</a></div>
@@ -83,7 +85,8 @@
       .then(function (data) { entries = data.slice().sort(newerFirst); render(); })
       .catch(function () {
         list.innerHTML = '<p class="card"><span data-lang="fr">Les nouveautés n\'ont pas pu être chargées.</span>' +
-          '<span data-lang="en">The release notes could not be loaded.</span></p>';
+          '<span data-lang="en">The release notes could not be loaded.</span>' +
+          '<span data-lang="es">No se pudieron cargar las novedades.</span></p>';
       });
     document.addEventListener("sensei-lang", render);
   })();
