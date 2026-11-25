@@ -104,5 +104,18 @@
       "en": "Sensei is now available in Spanish: the interface, the meanings of words, kanji and examples, grammar, the Sensei's tips and the widgets. The app follows your device's language, and you can also pick one for Sensei alone in the settings. Search now finds grammar points by their title in your language.",
       "es": "Sensei ya está disponible en español: la interfaz, el significado de las palabras, los kanji y los ejemplos, la gramática, los consejos del Sensei y los widgets. La app sigue el idioma de tu dispositivo, y también puedes elegir uno solo para Sensei en la configuración. La búsqueda ahora encuentra los puntos de gramática por su título en tu idioma."
     }
+  },
+  {
+    "version": "1.13",
+    "title": {
+      "fr": "Listes et révisions plus claires",
+      "en": "Clearer lists and reviews",
+      "es": "Listas y repasos más claros"
+    },
+    "text": {
+      "fr": "L'onglet Listes montre maintenant directement tes listes, tes favoris et les programmes. Pendant une révision, chaque bouton de note indique quand la carte reviendra : « 10 min », « 3 j », « 2 mois ». Le badge de S'entraîner compte les cartes de ta séance du jour, comme l'accueil. Deux nouveautés en grammaire : 〜そう pour dire qu'une chose a l'air (おいしそう), et les comparaisons avec どちらが et 一番. Et partout, une app plus lisible : de meilleurs contrastes, des cartes plus nettes en mode sombre et une séance mieux mise en page.",
+      "en": "The Lists tab now shows your lists, favorites and programs directly. During a review, each grade button tells you when the card will come back: \"10 min\", \"3 d\", \"2 mo\". The Practice badge counts the cards of your daily session, as the home screen does. Two new grammar points: 〜そう to say something looks a certain way (おいしそう), and comparisons with どちらが and 一番. And everywhere, an easier-to-read app: better contrast, clearer cards in dark mode and a better-laid-out session.",
+      "es": "La pestaña Listas ahora muestra directamente tus listas, tus favoritos y los programas. Durante un repaso, cada botón de calificación indica cuándo volverá la tarjeta: “10 min”, “3 d”, “2 m”. La insignia de Practicar cuenta las tarjetas de tu sesión del día, como la pantalla de inicio. Dos novedades de gramática: 〜そう para decir que algo parece de cierta manera (おいしそう), y las comparaciones con どちらが y 一番. Y en toda la app, más legibilidad: mejor contraste, tarjetas más claras en modo oscuro y una sesión mejor organizada."
+    }
   }
 ]
